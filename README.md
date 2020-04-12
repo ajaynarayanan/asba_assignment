@@ -5,20 +5,35 @@ List of files
 -------------
 1. preprocess.py
 2. plants.csv
-3. plant.csv
-4. README(this file)
+3. plants_preprocessed.csv
+4. requirements.txt
+5. README(this file)
 
 The dataset is a copy of the “US States Plants dataset for Connecticut" 
-from `Plants Databse <https://plants.sc.egov.usda.gov/java/stateDownload?statefips=US09>`_
+from `Plants Databse <https://plants.sc.egov.usda.gov/java/stateDownload?statefips=US09>`
 
 Usage
 -----
-To preprocess the dataset provided and save it to "plant.csv"
+To preprocess the dataset provided and save it to "plants_preprocessed.csv"
 
     python3 preprocess.py 
 
-To run aprori algorithm to the preprocesssed dataset
+To testdrive algorithms on the preprocesssed dataset for    
 
-    cd Apriori
-    python apriori.py -f ../plant.csv 
+    1) Frequent Itemsets Mining
 
+        python3 Frequent_Itemset_Mining.py 
+   
+    2) Maximum Frequent Itemsets Mining
+
+        python3 Maximum_Frequent_Itemset_Mining.py
+
+    3) Closed Frequent Itemsets Mining
+
+        python3 Closed_frequent_itemset_mining.py
+
+Requirements
+-----
+The requirements.txt file should list all Python libraries that this project depends on, and they can be installed using:
+
+    pip3 install -r requirements.txt
