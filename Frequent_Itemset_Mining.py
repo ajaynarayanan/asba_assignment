@@ -12,8 +12,8 @@ print("======== Frequent Itemset Mining ==========")
 print("\n\n========Apriori==========")
 file_name = "./plants_preprocessed.csv"
 inFile = dataFromFile(file_name) 
-minSupport = 0.15
-minConfidence = 0.6
+minSupport = 0.03
+minConfidence = 0.03
 items, rules = runApriori(inFile, minSupport, minConfidence)
 printResults(items, rules)
 

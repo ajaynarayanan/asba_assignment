@@ -125,6 +125,8 @@ def printResults(items, rules):
     if rules:
         print ("\n------------------------ RULES:")
         for rule, confidence in sorted(items, key=operator.itemgetter(1)):
+            if len(rule) == 1:
+                continue
             pre, post = rule
             print ("Rule: %s ==> %s , %.3f" % (str(pre), str(post), confidence))
     else :
